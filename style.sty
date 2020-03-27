@@ -1,0 +1,45 @@
+\ProvidesPackage{style}
+
+\setlength{\headheight}{13.6pt}
+
+% Emergency line break
+\emergencystretch=1em
+
+% Header
+\pagestyle{fancy}
+\fancyhead{}
+% Page numbers
+\fancyhead[LE,RO]{\thepage}
+% Chapter name
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+
+\fancyfoot{}
+
+% Sentence casing for titles in the bibliography
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase*{#1}}
+
+\makeatletter
+
+\newcommand\frontmatter{%
+    \cleardoublepage
+  %\@mainmatterfalse
+  \pagenumbering{roman}}
+
+\newcommand\mainmatter{%
+    \cleardoublepage
+ % \@mainmattertrue
+  \pagenumbering{arabic}}
+
+\newcommand\backmatter{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+ % \@mainmatterfalse
+   }
+
+\makeatother
+
+\interfootnotelinepenalty=100000

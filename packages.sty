@@ -1,0 +1,106 @@
+\ProvidesPackage{packages}
+
+%-----------------------------------------------------------------------------
+%              TECHNICAL
+%-----------------------------------------------------------------------------
+
+% UTF-8 as input encoding
+\usepackage[utf8]{inputenc}
+
+% T1 font encoding in pdf
+\usepackage[T1]{fontenc}
+
+% DIN-A4 paper format
+\usepackage[a4paper]{geometry}
+
+% More optional arguments
+\usepackage{xargs}
+
+% Colors
+\usepackage[dvipsnames]{xcolor}
+
+% Nice font
+\usepackage{lmodern}
+
+% Hyperlinks
+\usepackage[hidelinks,bookmarksnumbered]{hyperref}
+
+% Line spacing
+\usepackage{setspace}
+
+% Header
+\usepackage{fancyhdr}
+% Remove the header on empty pages
+\usepackage{emptypage}
+
+% Placeholder text
+\usepackage{lipsum}
+
+
+%-----------------------------------------------------------------------------
+%              MATH
+%-----------------------------------------------------------------------------
+% Math stuff
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{bbm}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+
+% More symbols
+\usepackage{marvosym}
+\usepackage{wasysym}
+
+% Inline fractions
+\usepackage{nicefrac}
+
+%-----------------------------------------------------------------------------
+%              FIGURES, TABLES AND LISTINGS
+%-----------------------------------------------------------------------------
+% Figures
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Code
+\usepackage{listings}
+
+% List of figures and tables in table of contents
+\usepackage[nottoc,numbib]{tocbibind}
+
+
+%-----------------------------------------------------------------------------
+%              OTHER
+%-----------------------------------------------------------------------------
+
+% Enumerations
+\usepackage{enumerate}
+
+% Citations
+\usepackage[style=alphabetic]{biblatex}
+
+% TODO notes
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny,obeyFinal]{todonotes}
+
+% Text symbols
+\usepackage{pifont}
+
+% Units
+\usepackage[binary-units=true]{siunitx}
+
+% Glossary
+\usepackage[toc]{glossaries}
+
+% Framed environmnets
+\usepackage{mdframed}
+
+% Correct spacing before and after ldots
+\usepackage{ellipsis}
+
+% Clever references
+\usepackage[nameinlink]{cleveref}

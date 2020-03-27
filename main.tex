@@ -1,0 +1,56 @@
+% Add the 'final' option to remove the to-dos and create a final file
+\documentclass[11pt,twoside,openright,a4paper]{report}
+
+% Additional common packages
+\usepackage{packages}
+% Document style
+\usepackage{style}
+% Additional commands
+\usepackage{commands}
+
+% Bibliography file
+\bibliography{refs}
+
+% Glossaries
+% \makeglossaries{}
+% \loadglsentries{./tex/glossary}
+
+\author{John Doe}
+\title{A Really Good Scientific Title}
+
+\begin{document}
+
+\frontmatter{}
+
+% title page
+\input{./tex/titlepage.tex}
+
+% back page
+\input{./tex/backpage.tex}
+
+% abstract
+\input{./tex/abstract.tex}
+
+% table of contents
+\tableofcontents{}
+
+\listoffigures{}
+\listoftables{}
+
+\mainmatter{}
+
+% start with the actual content
+\input{./tex/interesting.tex}
+
+\input{./tex/conclusion.tex}
+
+\printbibliography[heading=bibintoc]
+
+% \printglossaries{}
+
+\backmatter{}
+\appendix
+
+\input{./tex/cool_appendix.tex}
+
+\end{document}
